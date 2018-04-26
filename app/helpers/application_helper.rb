@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def api_response messages, code = :ok
-    render json: {messages: [messages]}, status: code
+  def api_response object, code = :ok
+    render json: object, status: code
   end
 end
